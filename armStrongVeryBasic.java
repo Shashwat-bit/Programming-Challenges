@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class armStrongVeryBasic {
+public class ArmStrong {
     public static void main(String[] args) {
         Scanner input=new Scanner(System.in);
         System.out.println("Check if the given input is ArmsStrong Number or not....");
