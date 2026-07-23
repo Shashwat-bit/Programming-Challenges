@@ -1,49 +1,22 @@
-public  class array {
-    public static void main(String[]args){
-        int[] myArray={67,62,74,73,89,98,89,73,1,2,3,3,4,4,5,55,};
-
-        int index=0;
-        while(index< myArray.length){
-            System.out.println(myArray[index]);
-            index++;
+import java.util.Scanner;
+public class array {
+    public static void main(String[] args) {
+        System.out.println("Array Sum and Average ");
+        int[] tiyu=arrayUtility.inputArray();//class ka naam likh kr ke hum dot laga kr method likh diye or call kr liya
+        long sum=sum(tiyu);
+        int average=average(tiyu);
+        System.out.println("Sum of the numbers is: "+sum);
+        System.out.println("Average of the numbers is: "+average);
+    }
+    public static long sum(int[] tiyuuuu){
+        int sum=0;
+        for(int i=0;i< tiyuuuu.length;i++){
+            sum=sum+tiyuuuu[i];
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//        int[] myArray=new int[3];
-//        myArray[0]=99;
-//        myArray[2]=100;
-////        myArray[1]=30;
-//        int[] myArray={99 ,100 ,3};
-//        System.out.println(myArray[0]);
-//        System.out.println(myArray[1]);
-//        System.out.println(myArray[2]);
-//        System.out.println(myArray[3]);
-
-
+        return sum;
+    }
+    public static int average(int[] tiyuuuu){
+        long sum=sum(tiyuuuu);
+        return (int)sum/ tiyuuuu.length;
     }
 }
-
